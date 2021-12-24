@@ -1,0 +1,36 @@
+{
+    "name": "express",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "npm run test & node ./server.js",
+        "test": "jest",
+        "monitor": "nodemon ./bin/www",
+        "lint": "jshint **/*.js",
+        "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx . --fix --max-warnings=0",
+        "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|md|html)\"",
+        "eject": "node eject"
+    },
+    "dependencies": {
+        "constantinople": "^4.0.1",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "express": "~4.16.3",
+        "helmet": "^4.6.0",
+        "http-errors": "~1.6.3",
+        "jest": "^27.0.6",
+        "jshint": "^2.13.0",
+        "morgan": "~1.9.1",
+        "nodemon": "^2.0.9",
+        "prettier": "^2.3.2",
+        "pug": "^3.0.2",
+        "supertest": "^6.1.3"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.30.0",
+        "eslint-config-airbnb-typescript": "^12.3.1"
+    }
+}
